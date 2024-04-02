@@ -15,7 +15,7 @@ mongoose
     useCreateIndex: true,
     useFindAndModify: false,
   })
-  .then((con) => console.log('DB connected'));
+  .then(() => console.log('DB connected'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
